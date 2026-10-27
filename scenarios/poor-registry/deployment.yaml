@@ -12,6 +12,8 @@ spec:
       labels:
         app: poor-registry
     spec:
+      securityContext:
+        runAsNonRoot: true
       containers:
       - name: poor-registry
         image: madhuakula/k8s-goat-poor-registry

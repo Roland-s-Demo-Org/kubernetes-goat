@@ -28,7 +28,7 @@ spec:
       hostIPC: true
       hostNetwork: true
       securityContext:
-        runAsUser: 0
+        runAsNonRoot: true
       # Init container to ensure container runtime socket is available
       initContainers:
       - name: verify-runtime-socket
