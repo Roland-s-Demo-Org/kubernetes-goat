@@ -12,6 +12,8 @@ spec:
       labels:
         app: kubernetes-goat-home
     spec:
+      securityContext:
+        runAsNonRoot: true
       containers:
       - name: kubernetes-goat-home
         image: madhuakula/k8s-goat-home
