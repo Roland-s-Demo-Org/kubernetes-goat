@@ -11,6 +11,8 @@ spec:
       labels:
         app: health-check
     spec:
+      securityContext:
+        runAsNonRoot: true
       # Init container to detect and link the correct container runtime socket
       initContainers:
       - name: detect-runtime-socket
