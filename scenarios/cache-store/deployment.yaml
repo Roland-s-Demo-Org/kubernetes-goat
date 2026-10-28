@@ -32,6 +32,8 @@ spec:
       labels:
         app: cache-store
     spec:
+      securityContext:
+        runAsNonRoot: true
       containers:
       - name: cache-store
         image: madhuakula/k8s-goat-cache-store
