@@ -67,6 +67,8 @@ spec:
         app: hunger-check
     spec:
       serviceAccountName: big-monolith-sa
+      securityContext:
+        runAsNonRoot: true
       containers:
       - name: hunger-check
         image: madhuakula/k8s-goat-hunger-check
