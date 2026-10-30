@@ -1,7 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"os/exec"
+	"regexp"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/recover"
@@ -25,6 +27,13 @@ func main() {
 
 	app.Post("/", func(c *fiber.Ctx) error {
 		endpoint := c.FormValue("endpoint")
+		validEndpoint := regexp.MustCompile(`^[a-zA-Z0-9\.\-:]+$`)
+		if !validEndpoint.MatchString(endpoint) {
+			return c.Render("index", fiber.Map{
+				"Title":  "Ping Your Servers",
+				"Output": fmt.Errorf("invalid input").Error(),
+			})
+		}
 
 		cmd := exec.Command("sh", "-c", "ping -c 2 "+endpoint)
 
