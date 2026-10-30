@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: build-code
-        image: madhuakula/k8s-goat-build-code
+        image: madhuakula/k8s-goat-build-code:latest@sha256:8eed20459baf04f6901e01f5dba66a60b7bcefed729bcd712b275dd5ae7a6380
         resources:
           limits:
             memory: "50Mi"
