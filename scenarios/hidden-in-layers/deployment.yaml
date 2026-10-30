@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: hidden-in-layers
-        image: madhuakula/k8s-goat-hidden-in-layers
+        image: madhuakula/k8s-goat-hidden-in-layers:latest@sha256:77419a519bc833c7b91ff279d35555fbd932b3e538cb60007147aca925fc569d
         # command:
         #  - "bin/sh"
         #  - "-c"
