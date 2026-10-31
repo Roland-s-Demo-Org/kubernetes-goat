@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: health-check
-        image: madhuakula/k8s-goat-health-check
+        image: madhuakula/k8s-goat-health-check:latest@sha256:19561147b9ef0b0840ca78af3a8efcac7b68bdc13b4fa1c505841af539bccfa7
         resources:
           limits:
             memory: "100Mi"

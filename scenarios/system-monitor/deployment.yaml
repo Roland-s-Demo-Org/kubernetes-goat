@@ -31,7 +31,7 @@ spec:
           path: /
       containers:
       - name: system-monitor
-        image: madhuakula/k8s-goat-system-monitor
+        image: madhuakula/k8s-goat-system-monitor:latest@sha256:79cf7b573ba2b189c8c9a4c90a7da64874c697b050bbffec3169c6a95fa2170b
         resources:
           limits:
             memory: "50Mi"
