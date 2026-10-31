@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: batch-check
-        image: madhuakula/k8s-goat-batch-check
+        image: madhuakula/k8s-goat-batch-check:latest@sha256:8642ce33d356861321c4f3948ee7e7570958cf2929d2e3c528cd529fff462c75
         # command:
         #  - "bin/sh"
         #  - "-c"

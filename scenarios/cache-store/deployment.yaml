@@ -34,6 +34,6 @@ spec:
     spec:
       containers:
       - name: cache-store
-        image: madhuakula/k8s-goat-cache-store
+        image: madhuakula/k8s-goat-cache-store:latest@sha256:4b00de713d8d3318f222b43488e271ef0815f3cd81f782996e7b89e5cf2b58c6
         ports:
         - containerPort: 6379
