@@ -7,6 +7,7 @@ replicaCount: 1
 image:
   repository: madhuakula/k8s-goat-metadata-db
   tag: latest
+  digest: sha256:cf9bc472e8eebcc4250b354e65206132be1ed6b67cd134a26b784451f6bee2a0 # latest
   pullPolicy: Always
 
 nameOverride: ""

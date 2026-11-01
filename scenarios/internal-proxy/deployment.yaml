@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: internal-api
-        image: madhuakula/k8s-goat-internal-api
+        image: madhuakula/k8s-goat-internal-api:latest@sha256:afcafd47327363070f788b3cc755e98ce5f556e3fea2cb16f8ae18a35b6f4d53
         resources:
           limits:
             cpu: 50m
@@ -27,7 +27,7 @@ spec:
         ports:
         - containerPort: 3000
       - name: info-app
-        image: madhuakula/k8s-goat-info-app
+        image: madhuakula/k8s-goat-info-app:latest@sha256:31eaaecaff18c91c8b75ad72cb7f5db4525861a3b6785604764564ca5c297d7e
         resources:
           limits:
             cpu: 30m
